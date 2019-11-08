@@ -11,7 +11,7 @@ router.get('/cat', function(req, res) {
 });
 var cats = "https://aws.random.cat/meow";
 router.get('/cats', function(req,res) {
-  console.log("In politics");
+  console.log("In cats");
   request(cats).pipe(res);
 });
 

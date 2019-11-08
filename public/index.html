@@ -5,17 +5,33 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
   <meta charset="utf-8">
   <title>Cats</title>
+  <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
   <div id="app">
-      <h1>Random Cat</h1>
-    <img v-bind:src="catURL.file"/>
+    <div class="title">
+      <span class="letter" data-letter="C">C</span>
+      <span class="letter" data-letter="A">A</span>
+      <span class="letter" data-letter="T">T</span>
+      <span class="letter" data-letter="S">S</span>
+    </div>
+    <h1 id="randcat">GET A RANDOM CAT</h1>
+
+    <a href="#"><img class="imagedropshadow imgr" v-bind:src="catURL.file" width="500" alt="Lime with green background"></a>
   </div>
-  <a href="https://github.com/sndubbs/nodecreate" target="blank">GitHub</a>
+  <div class="footer">
+    <a href="https://github.com/sndubbs/nodecreate" target="_blank"><span class="fa fa-github" style="font-size: 24px"></span>&nbsp;&nbsp;GitHub</a>
+  </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
   <script src="javascripts/app.js"></script>
+
+
+
+
 </body>
 
 </html>

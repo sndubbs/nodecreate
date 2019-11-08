@@ -15,7 +15,7 @@ var app = new Vue({
     async getcat() {
       // `this` points to the vm instance
       console.log("get cat");
-      var url = "http://fall2019.snowbyu.com:4203/cats";
+      var url = "http://cs.taylormeurs.com:3000/cats";
       try {
         let response = await axios.get(url);
         this.catURL = response.data;
